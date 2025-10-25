@@ -1,0 +1,129 @@
+﻿
+      <html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word' xmlns='http://www.w3.org/TR/REC-html40'>
+      <head>
+        <meta charset='utf-8'>
+        <title>Converted from Markdown</title>
+        <!--[if gte mso 9]>
+        <xml>
+          <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotPromptForConvert/>
+            <w:DoNotShowInsertAsIcon/>
+          </w:WordDocument>
+        </xml>
+        <![endif]-->
+        <style>
+          @page {
+            size: A4;
+            margin: 2.54cm;
+          }
+          body { 
+            font-family: 'Times New Roman', serif; 
+            font-size: 12pt;
+            line-height: 1.5; 
+            margin: 0;
+            padding: 0;
+            color: #000;
+          }
+          h1 { font-size: 18pt; font-weight: bold; margin: 12pt 0 6pt 0; }
+          h2 { font-size: 16pt; font-weight: bold; margin: 12pt 0 6pt 0; }
+          h3 { font-size: 14pt; font-weight: bold; margin: 12pt 0 6pt 0; }
+          p { margin: 6pt 0; }
+          code { 
+            font-family: 'Courier New', monospace;
+            background-color: #f5f5f5;
+            padding: 2pt;
+            border: 1pt solid #ddd;
+          }
+          pre { 
+            font-family: 'Courier New', monospace;
+            background-color: #f5f5f5;
+            padding: 6pt;
+            border: 1pt solid #ddd;
+            margin: 6pt 0;
+            white-space: pre-wrap;
+          }
+          blockquote { 
+            border-left: 3pt solid #ccc;
+            margin: 6pt 0;
+            padding-left: 12pt;
+            font-style: italic;
+          }
+          table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 6pt 0;
+          }
+          th, td {
+            border: 1pt solid #000;
+            padding: 3pt 6pt;
+            text-align: left;
+          }
+          th {
+            background-color: #f0f0f0;
+            font-weight: bold;
+          }
+          ul, ol {
+            margin: 6pt 0;
+            padding-left: 24pt;
+          }
+          li {
+            margin: 3pt 0;
+          }
+        </style>
+      </head>
+      <body>
+        <h1>Лабораторнаяработа No 4</h1>
+<p><strong>Computer Skills for Scientific Writing</strong></p>
+<h2>Хосе Фернандо Леон Атупанья | НФИмд-01-24</h2>
+<h2>Содержание</h2>
+<ul>
+<li>1 Цель работы</li>
+<li>2 Выполнение лабораторной работы</li>
+<li>3 Выводы</li>
+</ul>
+<h2>1 Цель работы</h2>
+<p>Изучить структуру и правильный способ размещения изображений в научных работах, чтобы приобрести хорошие навыки и умения в объективном и нейтральном написании формальных исследований.</p>
+<h2>2 Выполнение лабораторной работы</h2>
+<ol>
+<li><p>Попробуйте включить созданное вами изображение, заменив «стандартные», которые мы использовали в демонстрации.
+<img src="image%5C1.1.PNG" alt="Рис. 2.1">
+<img src="image%5C1.2.PNG" alt="Рис. 2.1"></p>
+</li>
+<li><p>Изучите возможности клавиш высоты, ширины, угла и масштаба.</p>
+</li>
+</ol>
+<p><img src="image/2.1.PNG" alt="Рис. 2.1">
+<img src="image/2.2.PNG" alt="Рис. 2.2"></p>
+<ol start="3">
+<li>Используйте клавишу width, чтобы задать размер одного изображения относительно ширины текста, а другого — относительно ширины строки. Попробуйте, как они ведут себя с опцией «Два столбца» и без неё.</li>
+</ol>
+<p><img src="image/3.1.PNG" alt="Рис. 3.1">
+<img src="image/3.2.PNG" alt="Рис. 3.2"></p>
+<ol start="4">
+<li>Используйте Lipsum для создания достаточно длинной демонстрации, а затем попробуйте разместить плавающие объекты, используя разные спецификаторы положения. Как взаимодействуют разные спецификаторы?</li>
+</ol>
+<p><img src="image/4.1.PNG" alt="Рис. 4.1: Переменные программы">
+<img src="image/4.2.PNG" alt="Рис. 4.1: Переменные программы"></p>
+<ol start="5">
+<li>Попробуйте добавить новые пронумерованные части (разделы, подразделы, пронумерованные списки) в тестовый документ и выяснить, сколько запусков потребуется, чтобы команды меток заработали.</li>
+</ol>
+<p><img src="image/5.1.PNG" alt="Рис. 5.1">
+<img src="image/5.2.PNG" alt="Рис. 5.1"></p>
+<ol start="6">
+<li>Добавьте несколько плавающих элементов и посмотрите, что произойдет, если поместить метку перед подписью, а не после нее. Можете ли вы предсказать результат?</li>
+</ol>
+<p><img src="image/6.1.PNG" alt="Рис. 6.1">
+<img src="image/6.2.PNG" alt="Рис. 6.1"></p>
+<ol start="7">
+<li>Что произойдет, если поместить метку уравнения после конечного уравнения?</li>
+</ol>
+<p><img src="image/7.1.PNG" alt="Рис. 7.1">
+<img src="image/7.2.PNG" alt="Рис. 7.1"></p>
+<h2>3 Выводы</h2>
+<p>В данной лабораторной работе мы приобрели необходимые знания для выполнения задач по размещению изображений и оформлению ссылок в научных работах в формате TEX и успешно справились с поставленными в лабораторной работе задачами.</p>
+
+      </body>
+      </html>
+    
