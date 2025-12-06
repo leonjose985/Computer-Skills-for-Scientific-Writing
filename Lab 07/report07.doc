@@ -1,0 +1,147 @@
+﻿
+      <html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word' xmlns='http://www.w3.org/TR/REC-html40'>
+      <head>
+        <meta charset='utf-8'>
+        <title>Converted from Markdown</title>
+        <!--[if gte mso 9]>
+        <xml>
+          <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotPromptForConvert/>
+            <w:DoNotShowInsertAsIcon/>
+          </w:WordDocument>
+        </xml>
+        <![endif]-->
+        <style>
+          @page {
+            size: A4;
+            margin: 2.54cm;
+          }
+          body { 
+            font-family: 'Times New Roman', serif; 
+            font-size: 12pt;
+            line-height: 1.5; 
+            margin: 0;
+            padding: 0;
+            color: #000;
+          }
+          h1 { font-size: 18pt; font-weight: bold; margin: 12pt 0 6pt 0; }
+          h2 { font-size: 16pt; font-weight: bold; margin: 12pt 0 6pt 0; }
+          h3 { font-size: 14pt; font-weight: bold; margin: 12pt 0 6pt 0; }
+          p { margin: 6pt 0; }
+          code { 
+            font-family: 'Courier New', monospace;
+            background-color: #f5f5f5;
+            padding: 2pt;
+            border: 1pt solid #ddd;
+          }
+          pre { 
+            font-family: 'Courier New', monospace;
+            background-color: #f5f5f5;
+            padding: 6pt;
+            border: 1pt solid #ddd;
+            margin: 6pt 0;
+            white-space: pre-wrap;
+          }
+          blockquote { 
+            border-left: 3pt solid #ccc;
+            margin: 6pt 0;
+            padding-left: 12pt;
+            font-style: italic;
+          }
+          table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 6pt 0;
+          }
+          th, td {
+            border: 1pt solid #000;
+            padding: 3pt 6pt;
+            text-align: left;
+          }
+          th {
+            background-color: #f0f0f0;
+            font-weight: bold;
+          }
+          ul, ol {
+            margin: 6pt 0;
+            padding-left: 24pt;
+          }
+          li {
+            margin: 3pt 0;
+          }
+        </style>
+      </head>
+      <body>
+        <h1>Лабораторнаяработа No 7</h1>
+<p><strong>Computer Skills for Scientific Writing</strong></p>
+<h2>Хосе Фернандо Леон Атупанья | НФИмд-01-24</h2>
+<h2>Содержание</h2>
+<ul>
+<li>1 Цель работы</li>
+<li>2 Выполнение лабораторной работы</li>
+<li>3 Выводы</li>
+</ul>
+<h2>1 Цель работы</h2>
+<p>Освоить создание презентаций и научных постеров в LaTeX с использованием класса Beamer и специализированных пакетов для постеров (a0poster, beamerposter, tikzposter). Изучить структуру презентаций, управление появлением контента (pause, uncover), работу с темами и цветами, а также научиться создавать многостолбцовые макеты и блоки для постеров.</p>
+<h2>2 Выполнение лабораторной работы</h2>
+<ol>
+<li>Создание презентации в Beamer</li>
+</ol>
+<p>Задание: Создать базовую презентацию с использованием темы Copenhagen, включая заголовочный слайд и три содержательных слайда.</p>
+<p>Выполнение:
+Был создан документ Beamer с заголовком, автором и датой. Использована тема Copenhagen. Добавлены слайды с использованием окружения frame. Результат — чистая, структурированная презентация с заголовком и тремя слайдами.</p>
+<p>Код для natbib с авторско-годовым стилем цитирования.
+<img src="img%5C1.1.PNG" alt="Рис. 2.1">
+Результат - библиография в стиле plainnat с текстовыми и скобочными цитатами
+<img src="img%5C1.2.PNG" alt="Рис. 2.1">
+<img src="img%5C1.4.PNG" alt="Рис. 2.1">
+<img src="img%5C1.3.PNG" alt="Рис. 2.1"></p>
+<ol start="2">
+<li>Использование блоков и списков</li>
+</ol>
+<p>Задание: Применить окружения block, enumerate и itemize для организации информации.</p>
+<p>Выполнение:
+На слайд добавлены блоки с определением и теоремой, а также нумерованный список. Это позволяет визуально отделять разные типы информации.</p>
+<p><img src="img/2.1.PNG" alt="Рис. 2.1">
+Новые записи в BibTeX-файле для статей Эйнштейна и Кнута
+<img src="img/2.2.PNG" alt="Рис. 2.2">
+Использование новых цитат в документе LaTeX
+<img src="img/2.3.PNG" alt="Рис. 2.2"></p>
+<ol start="3">
+<li>Управление появлением контента (pause и uncover)</li>
+</ol>
+<p>Задание: Реализовать пошаговое появление элементов на слайде.</p>
+<p>Выполнение:
+Использованы команды \pause и \uncover. С помощью \pause элементы появляются последовательно. С помощью \uncover&lt;2-&gt; можно контролировать, на каком шаге появляется каждый элемент</p>
+<p><img src="img/3.PNG" alt="Рис. 3.1">
+Код с цитированием несуществующей записи Nonexistent2023
+Предупреждения в логе компиляции об отсутствующих ссылках</p>
+<ol start="4">
+<li>Смена темы и цветов</li>
+</ol>
+<p>Задание: Изменить тему на Warsaw и цветовую схему на beaver.</p>
+<p>Выполнение:
+В преамбулу добавлены команды:</p>
+<p>\usetheme{Warsaw}
+\usecolortheme{beaver}</p>
+<p>Это меняет внешний вид презентации на более контрастный и стильный.</p>
+<h2>3 Выводы</h2>
+<p>В ходе выполнения лабораторной работы были освоены ключевые навыки создания презентаций и научных постеров в LaTeX. Были изучены:
+Beamer — для создания структурированных презентаций с поддержкой тем, анимации и пошагового отображения контента.
+Три метода создания постеров:</p>
+<ul>
+<li><p>a0poster — простой, похож на обычный документ LaTeX.</p>
+</li>
+<li><p>beamerposter — использует знакомый синтаксис Beamer, подходит для пользователей Beamer.</p>
+</li>
+<li><p>tikzposter — предлагает наибольшую гибкость и современный дизайн, но требует больше времени на освоение.</p>
+</li>
+</ul>
+<p>Были получены практические навыки работы с колонками, блоками, изображениями, пользовательскими цветами и заметками. Каждый метод имеет свои преимущества, и выбор зависит от задачи, уровня подготовки и требований к визуальному оформлению.</p>
+<p>LaTeX предоставляет профессиональные инструменты для создания качественных научных материалов, готовых к печати и презентации на конференциях.</p>
+
+      </body>
+      </html>
+    
