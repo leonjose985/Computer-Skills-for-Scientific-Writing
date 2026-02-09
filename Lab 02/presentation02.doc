@@ -1,0 +1,176 @@
+﻿
+      <html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word' xmlns='http://www.w3.org/TR/REC-html40'>
+      <head>
+        <meta charset='utf-8'>
+        <title>Converted from Markdown</title>
+        <!--[if gte mso 9]>
+        <xml>
+          <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotPromptForConvert/>
+            <w:DoNotShowInsertAsIcon/>
+          </w:WordDocument>
+        </xml>
+        <![endif]-->
+        <style>
+          @page {
+            size: A4;
+            margin: 2.54cm;
+          }
+          body { 
+            font-family: 'Times New Roman', serif; 
+            font-size: 12pt;
+            line-height: 1.5; 
+            margin: 0;
+            padding: 0;
+            color: #000;
+          }
+          h1 { font-size: 18pt; font-weight: bold; margin: 12pt 0 6pt 0; }
+          h2 { font-size: 16pt; font-weight: bold; margin: 12pt 0 6pt 0; }
+          h3 { font-size: 14pt; font-weight: bold; margin: 12pt 0 6pt 0; }
+          p { margin: 6pt 0; }
+          code { 
+            font-family: 'Courier New', monospace;
+            background-color: #f5f5f5;
+            padding: 2pt;
+            border: 1pt solid #ddd;
+          }
+          pre { 
+            font-family: 'Courier New', monospace;
+            background-color: #f5f5f5;
+            padding: 6pt;
+            border: 1pt solid #ddd;
+            margin: 6pt 0;
+            white-space: pre-wrap;
+          }
+          blockquote { 
+            border-left: 3pt solid #ccc;
+            margin: 6pt 0;
+            padding-left: 12pt;
+            font-style: italic;
+          }
+          table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 6pt 0;
+          }
+          th, td {
+            border: 1pt solid #000;
+            padding: 3pt 6pt;
+            text-align: left;
+          }
+          th {
+            background-color: #f0f0f0;
+            font-weight: bold;
+          }
+          ul, ol {
+            margin: 6pt 0;
+            padding-left: 24pt;
+          }
+          li {
+            margin: 3pt 0;
+          }
+        </style>
+      </head>
+      <body>
+        <h1>Лабораторнаяработа No 2</h1>
+<p><strong>Computer Skills for Scientific Writing</strong></p>
+<h2>Хосе Фернандо Леон Атупанья | НФИмд-01-24</h2>
+<h2>Содержание</h2>
+<ul>
+<li>1 Цель работы</li>
+<li>2 Выполнение лабораторной работы</li>
+<li>3 Выводы</li>
+</ul>
+<h2>1 Цель работы</h2>
+<p>Освоить базовую структуру документа LaTeX, научиться компилировать .tex-файлы в PDF, изучить основные специальные символы LaTeX и их использование. Научиться создавать простые документы, разделять текст на параграфы, применять жёсткие пробелы и правильно использовать комментарии в коде.</p>
+<h2>2 Выполнение лабораторной работы</h2>
+<ol>
+<li>Создание первого документа LaTeX</li>
+</ol>
+<p>Задание: Создать простой документ LaTeX, скомпилировать его в PDF и изучить структуру файла.</p>
+<p>Выполнение:
+Был создан файл first.tex со следующим содержанием:</p>
+<ol start="2">
+<li>Создание первого LaTeX-документа</li>
+</ol>
+<p>Был создан файл формата .tex, содержащий базовую структуру документа LaTeX. В документе были использованы основные элементы:</p>
+<p>объявление класса документа (article);</p>
+<p>подключение пакетов для поддержки языка и математических формул;</p>
+<p>задание заголовка, автора и даты;</p>
+<p>формирование основного содержимого документа.</p>
+<p>Пример структуры документа:</p>
+<pre><code class="language-latex">\documentclass{article}
+\usepackage[T1]{fontenc}
+
+\begin{document}
+Hey world!
+
+This is a first document.
+\end{document}
+</code></pre>
+<ol start="3">
+<li>Добавление комментариев и структурирование документа</li>
+</ol>
+<p>Задание: Добавить комментарии в документ, использовать параметры класса документа, добавить параграфы и примечание.</p>
+<p>Выполнение:
+Документ был расширен:</p>
+<pre><code class="language-latex">\documentclass[a4paper,12pt]{article}
+\usepackage[T1]{fontenc}
+
+\begin{document}
+This is a simple document\footnote{with a footnote}.
+
+This is a new paragraph.
+\end{document}
+</code></pre>
+<p>Были использованы:</p>
+<p>Параметры класса документа: a4paper,12pt.</p>
+<p>Команда \footnote{} для создания сноски.</p>
+<p>Пустая строка для разделения параграфов.</p>
+<ol start="4">
+<li>Работа со специальными символами и жёсткими пробелами</li>
+</ol>
+<p>Задание: Использовать специальные символы LaTeX, такие как $, %, &amp;, #, _, {, }, а также применить жёсткие пробелы.</p>
+<p>Выполнение:
+Был создан отдельный документ для экспериментов:</p>
+<pre><code class="language-latex">\documentclass{article}
+\usepackage[T1]{fontenc}
+
+\begin{document}
+Примеры специальных символов:
+
+- Доллар: \$100
+- Процент: 20\%
+- Амперсанд: AT\&amp;T
+- Решётка: \#tag
+- Нижнее подчёркивание: variable\_name
+- Фигурные скобки: \{текст\}
+
+Пример жёсткого пробела:  
+Dr.~House, стр.~45, рис.~1.2.
+\end{document}
+</code></pre>
+<h2>3 Выводы</h2>
+<p>В ходе выполнения лабораторной работы были освоены следующие навыки:</p>
+<p>Структура документа LaTeX:</p>
+<p>Понимание разделения на преамбулу и тело документа.</p>
+<p>Использование команд \documentclass, \usepackage, \begin{document}, \end{document}.</p>
+<p>Компиляция документов:</p>
+<p>Работа с командой pdflatex в терминале.</p>
+<p>Понимание процесса преобразования .tex → .pdf.</p>
+<p>Специальные символы и команды:</p>
+<p>Правильное экранирование символов $, %, &amp;, #, _, {, }.</p>
+<p>Использование жёстких пробелов (~) для контроля переноса строк.</p>
+<p>Организация текста:</p>
+<p>Создание параграфов через пустые строки.</p>
+<p>Добавление сносок с помощью \footnote{}.</p>
+<p>Работа в редакторе:</p>
+<p>Навыки написания и отладки LaTeX-кода.</p>
+<p>Понимание важности точного синтаксиса в LaTeX.</p>
+<p>LaTeX предоставляет мощный и точный инструмент для создания структурированных документов. Его синтаксис, хотя и требует внимательности к деталям, позволяет достичь профессионального форматирования, что особенно важно в научных и технических работах. Освоение базовых принципов LaTeX является фундаментом для дальнейшего изучения более сложных возможностей системы.</p>
+
+      </body>
+      </html>
+    
