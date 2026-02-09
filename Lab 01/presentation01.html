@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Converted from Markdown</title>
+  <style>
+    body { 
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; 
+      line-height: 1.6; 
+      max-width: 800px; 
+      margin: 0 auto; 
+      padding: 20px;
+      color: #333;
+    }
+    h1, h2, h3 { color: #333; margin-top: 1.5em; margin-bottom: 0.5em; }
+    h1 { font-size: 2em; }
+    h2 { font-size: 1.5em; }
+    h3 { font-size: 1.2em; }
+    code { 
+      background: #f4f4f4; 
+      padding: 2px 4px; 
+      border-radius: 3px; 
+      font-family: 'Courier New', monospace;
+    }
+    pre { 
+      background: #f4f4f4; 
+      padding: 15px; 
+      border-radius: 5px; 
+      overflow-x: auto;
+      font-family: 'Courier New', monospace;
+      line-height: 1.4;
+    }
+    blockquote { 
+      border-left: 4px solid #ddd; 
+      margin: 1em 0; 
+      padding-left: 20px; 
+      color: #666;
+      font-style: italic;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 1em 0;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px 12px;
+      text-align: left;
+    }
+    th {
+      background-color: #f5f5f5;
+      font-weight: bold;
+    }
+    ul, ol {
+      margin: 1em 0;
+      padding-left: 2em;
+    }
+    li {
+      margin: 0.5em 0;
+    }
+  </style>
+</head>
+<body>
+<hr>
+<p>marp: true
+css: custom-theme.css
+title: &quot;Лабораторная работа №1&quot;
+subtitle: &quot;Дисциплина: Computer Skills for Scientific Wrinting&quot;
+author: Хосе Фернандо Леон Атупанья, НФИмд-01-24, 1032249918
+institute: Российский Университет Дружбы Народов, Москва, Россия
+date: 26 октобря 2024</p>
+<hr>
+<h1><strong>Лабораторная работа № 1</strong></h1>
+<p><strong>Дисциплина</strong>: Computer Skills for Scientific Wrinting</p>
+<p><strong>Тема:</strong> Принципов работы с системой вёрстки LaTeX</p>
+<p><strong>Студент:</strong> Леон Фернандо Хосе Фернандо </p>
+<hr>
+<h2><strong>Цель работы</strong></h2>
+<p>Освоить базовые принципы работы с системой компьютерной вёрстки LaTeX и установить дистрибутив TeX Live.</p>
+<p><strong>Задачи:</strong></p>
+<ol>
+<li>Изучить способы установки TeX Live на различных операционных системах  </li>
+<li>Ознакомиться с основными командами LaTeX  </li>
+<li>Научиться создавать и компилировать простой LaTeX-документ  </li>
+<li>Освоить базовую структуру LaTeX-файла</li>
+</ol>
+<hr>
+<h1><strong>2. Выполнение лабораторной работы</strong></h1>
+<h2><strong>1. Установка TeX Live</strong></h2>
+<p>Установка дистрибутива TeX Live была выполнена с использованием пакетного менеджера операционной системы.</p>
+<p>Для Ubuntu использовалась команда:</p>
+<pre><code class="language-bash">sudo apt install texlive-full
+</code></pre>
+<hr>
+<p>Проверка корректности установки была выполнена с помощью команды:</p>
+<pre><code class="language-bash">pdflatex --version
+</code></pre>
+<p>Результат подтвердил успешную установку и готовность среды к работе.</p>
+<hr>
+<h2>2. Создание первого LaTeX-документа</h2>
+<p>Был создан файл формата .tex с базовой структурой LaTeX-документа:</p>
+<pre><code class="language-latex">\documentclass{article}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+
+\title{Laboratorio 1}
+\author{Jose Fernando Leon Atupanya}
+\date{\today}
+
+\begin{document}
+\maketitle
+\section{Introducción}
+Primer documento en LaTeX.
+\end{document}
+</code></pre>
+<p>После компиляции был получен PDF-документ с корректным форматированием.</p>
+<hr>
+<h2>3. Использование математических формул</h2>
+<p>В ходе лабораторной работы были изучены основные способы ввода математических формул:
+Пример формулы в режиме отображения:</p>
+<pre><code class="language-latex">\[
+E = mc^2
+\]
+</code></pre>
+<p>Это позволило освоить базовую математическую нотацию LaTeX.</p>
+<hr>
+<h2>4. Компиляция документа</h2>
+<p>Для компиляции LaTeX-документа использовалась команда:</p>
+<pre><code class="language-bash">pdflatex laboratorio1.tex
+</code></pre>
+<p>В результате был создан файл laboratorio1.pdf, содержащий структурированный отчёт.</p>
+<hr>
+<h1><strong>Вывод</strong></h1>
+<p>Лабораторная работа успешно выполнена. Были получены практические навыки:</p>
+<p>Освоенные технологии и умения:</p>
+<p>Установка и настройка дистрибутива TeX Live</p>
+<p>Создание LaTeX-документов</p>
+<p>Работа со структурой документа (\documentclass, \section, \maketitle)</p>
+<p>Ввод математических формул и специальных символов</p>
+<p>Компиляция документов в формат PDF.</p>
+
+</body>
+</html>
