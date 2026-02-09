@@ -1,0 +1,178 @@
+﻿
+      <html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word' xmlns='http://www.w3.org/TR/REC-html40'>
+      <head>
+        <meta charset='utf-8'>
+        <title>Converted from Markdown</title>
+        <!--[if gte mso 9]>
+        <xml>
+          <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotPromptForConvert/>
+            <w:DoNotShowInsertAsIcon/>
+          </w:WordDocument>
+        </xml>
+        <![endif]-->
+        <style>
+          @page {
+            size: A4;
+            margin: 2.54cm;
+          }
+          body { 
+            font-family: 'Times New Roman', serif; 
+            font-size: 12pt;
+            line-height: 1.5; 
+            margin: 0;
+            padding: 0;
+            color: #000;
+          }
+          h1 { font-size: 18pt; font-weight: bold; margin: 12pt 0 6pt 0; }
+          h2 { font-size: 16pt; font-weight: bold; margin: 12pt 0 6pt 0; }
+          h3 { font-size: 14pt; font-weight: bold; margin: 12pt 0 6pt 0; }
+          p { margin: 6pt 0; }
+          code { 
+            font-family: 'Courier New', monospace;
+            background-color: #f5f5f5;
+            padding: 2pt;
+            border: 1pt solid #ddd;
+          }
+          pre { 
+            font-family: 'Courier New', monospace;
+            background-color: #f5f5f5;
+            padding: 6pt;
+            border: 1pt solid #ddd;
+            margin: 6pt 0;
+            white-space: pre-wrap;
+          }
+          blockquote { 
+            border-left: 3pt solid #ccc;
+            margin: 6pt 0;
+            padding-left: 12pt;
+            font-style: italic;
+          }
+          table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 6pt 0;
+          }
+          th, td {
+            border: 1pt solid #000;
+            padding: 3pt 6pt;
+            text-align: left;
+          }
+          th {
+            background-color: #f0f0f0;
+            font-weight: bold;
+          }
+          ul, ol {
+            margin: 6pt 0;
+            padding-left: 24pt;
+          }
+          li {
+            margin: 3pt 0;
+          }
+        </style>
+      </head>
+      <body>
+        <h1>Лабораторнаяработа No 3</h1>
+<p><strong>Computer Skills for Scientific Writing</strong></p>
+<h2>Хосе Фернандо Леон Атупанья | НФИмд-01-24</h2>
+<h2>Содержание</h2>
+<ul>
+<li>1 Цель работы</li>
+<li>2 Выполнение лабораторной работы</li>
+<li>3 Выводы</li>
+</ul>
+<h2>1 Цель работы</h2>
+<p>Освоить набор математических формул в LaTeX с использованием математического режима, изучить разницу между встроенным и выносным математическим режимом, познакомиться с пакетами <code>amsmath</code>, <code>bm</code> и <code>mathtools</code>, научиться форматировать математические выражения, включая индексы, интегралы, матрицы, выравнивание уравнений и изменение шрифтов в математическом режиме.</p>
+<h2>2 Выполнение лабораторной работы</h2>
+<h3>2.1 Встроенный и выносный математический режим</h3>
+<p>Были изучены два способа записи математических выражений:  </p>
+<ul>
+<li><strong>Встроенный режим</strong>: ( y = mx + c ), ( 5^2 = 3^2 + 4^2 )  </li>
+<li><strong>Выносный режим</strong>:<br>[
+y = mx + c
+]<br>Оба режима используют одинаковые команды, но выносный режим центрируется по умолчанию и не нарушает межстрочный интервал.</li>
+</ul>
+<h3>2.2 Индексы и специальные команды</h3>
+<ul>
+<li>Верхние и нижние индексы: ( a^{b} ), ( a_{b} )  </li>
+<li>Греческие буквы и функции: ( \sin \theta ), ( \log \alpha )  </li>
+<li>Использование фигурных скобок для группировки обязательно.</li>
+</ul>
+<h3>2.3 Интегралы и дифференциалы</h3>
+<p>Интеграл с пределами:<br>[
+\int_{-\infty}^{\infty} e^{-x^2} , dx
+]<br>Был создан пользовательский команда <code>\diff</code> для форматирования дифференциала:<br>[
+\int_{0}^{1} x^2 \diff x
+]</p>
+<h3>2.4 Нумерованные уравнения</h3>
+<p>Использование окружения <code>equation</code> для автоматической нумерации:<br>\begin{equation}
+\int_{0}^{\pi} \sin x , dx = 2
+\end{equation}</p>
+<h3>2.5 Выравнивание уравнений с <code>amsmath</code></h3>
+<p>Окружение <code>align*</code> позволяет выравнивать уравнения по знаку равенства:<br>\begin{align*}
+Q_{n,0} &amp;= 1, \quad Q_{0,k} = [k=0]; \
+Q_{n,k} &amp;= Q_{n-1,k} + Q_{n-1,k-1} + \binom{n}{k}, \quad \text{для } n,k &gt; 0.
+\end{align*}</p>
+<h3>2.6 Шрифты в математическом режиме</h3>
+<p>Изучены команды для изменения шрифтов:  </p>
+<ul>
+<li><code>\mathrm{roman}</code>  </li>
+<li><code>\mathit{italic}</code>  </li>
+<li><code>\mathbf{bold}</code>  </li>
+<li><code>\mathbb{blackboard}</code> (требует <code>amssymb</code>)</li>
+</ul>
+<p>Пример сравнения: ( \text{size} ) (неправильно) vs ( \mathit{size} ) (правильно).</p>
+<h3>2.7 Матрицы с <code>mathtools</code></h3>
+<p>Создана матрица с выравниванием столбцов по правому краю:<br>[
+\begin{pmatrix*}[r]
+1 &amp; 2 \
+-3 &amp; 4
+\end{pmatrix*}
+]</p>
+<h3>2.8 Жирные символы с <code>bm</code></h3>
+<p>Пакет <code>bm</code> позволяет делать жирными любые символы, включая греческие буквы и операторы:<br>[
+\bm{\alpha} + \bm{\beta} = \bm{\gamma}, \quad \bm{\Sigma} \bm{\theta}
+]</p>
+<h3>2.9 Эксперименты с параметрами документа</h3>
+<p>Были опробованы опции класса документа:  </p>
+<ul>
+<li><code>[fleqn]</code> — выравнивание уравнений по левому краю  </li>
+<li><code>[leqno]</code> — нумерация уравнений слева</li>
+</ul>
+<h2>3 Выводы</h2>
+<p>В ходе выполнения лабораторной работы были освоены следующие ключевые навыки:</p>
+<ol>
+<li><p><strong>Работа с математическим режимом LaTeX</strong>:</p>
+<ul>
+<li>Правильное использование встроенного и выносного режимов.</li>
+<li>Набор сложных формул с индексами, интегралами, греческими буквами.</li>
+</ul>
+</li>
+<li><p><strong>Использование пакетов для расширения возможностей</strong>:</p>
+<ul>
+<li><code>amsmath</code> для выравнивания, многострочных уравнений и матриц.</li>
+<li><code>bm</code> для работы с жирными математическими символами.</li>
+<li><code>mathtools</code> для улучшенного форматирования матриц.</li>
+</ul>
+</li>
+<li><p><strong>Форматирование и стилизация</strong>:</p>
+<ul>
+<li>Изменение шрифтов в математических выражениях.</li>
+<li>Создание нумерованных уравнений.</li>
+<li>Настройка выравнивания и нумерации через параметры класса документа.</li>
+</ul>
+</li>
+<li><p><strong>Практическое применение</strong>:</p>
+<ul>
+<li>Создание полного LaTeX-документа с математическим содержанием.</li>
+<li>Экспериментирование с различными командами и опциями для достижения желаемого форматирования.</li>
+</ul>
+</li>
+</ol>
+<p>LaTeX предоставляет мощные и гибкие средства для набора сложных математических выражений, что делает его стандартом для научных публикаций. Использование специализированных пакетов значительно расширяет базовые возможности и позволяет создавать профессионально оформленные математические тексты с высокой степенью точности и согласованности.</p>
+
+      </body>
+      </html>
+    
