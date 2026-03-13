@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Converted from Markdown</title>
+  <style>
+    body { 
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; 
+      line-height: 1.6; 
+      max-width: 800px; 
+      margin: 0 auto; 
+      padding: 20px;
+      color: #333;
+    }
+    h1, h2, h3 { color: #333; margin-top: 1.5em; margin-bottom: 0.5em; }
+    h1 { font-size: 2em; }
+    h2 { font-size: 1.5em; }
+    h3 { font-size: 1.2em; }
+    code { 
+      background: #f4f4f4; 
+      padding: 2px 4px; 
+      border-radius: 3px; 
+      font-family: 'Courier New', monospace;
+    }
+    pre { 
+      background: #f4f4f4; 
+      padding: 15px; 
+      border-radius: 5px; 
+      overflow-x: auto;
+      font-family: 'Courier New', monospace;
+      line-height: 1.4;
+    }
+    blockquote { 
+      border-left: 4px solid #ddd; 
+      margin: 1em 0; 
+      padding-left: 20px; 
+      color: #666;
+      font-style: italic;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 1em 0;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px 12px;
+      text-align: left;
+    }
+    th {
+      background-color: #f5f5f5;
+      font-weight: bold;
+    }
+    ul, ol {
+      margin: 1em 0;
+      padding-left: 2em;
+    }
+    li {
+      margin: 0.5em 0;
+    }
+  </style>
+</head>
+<body>
+<hr>
+<p>marp: true
+css: custom-theme.css
+title: &quot;Лабораторная работа №3&quot;
+subtitle: &quot;Дисциплина: Computer Skills for Scientific Wrinting&quot;
+author: Хосе Фернандо Леон Атупанья, НФИмд-01-24, 1032249918
+institute: Российский Университет Дружбы Народов, Москва, Россия
+date: 26 октобря 2024</p>
+<hr>
+<h1><strong>Лабораторная работа № 3</strong></h1>
+<p><strong>Дисциплина</strong>: Computer Skills for Scientific Wrinting</p>
+<p><strong>Тема:</strong> Набор математических формул в LaTeX</p>
+<p><strong>Студент:</strong> Леон Фернандо Хосе Фернандо </p>
+<hr>
+<h2><strong>Цель работы</strong></h2>
+<p>Освоить набор математических формул в LaTeX с использованием:</p>
+<ul>
+<li>Математического режима (inline и display)</li>
+<li>Пакетов <strong>amsmath</strong>, <strong>bm</strong>, <strong>mathtools</strong></li>
+<li>Форматирования формул: индексы, интегралы, матрицы, выравнивание</li>
+</ul>
+<p><strong>Задачи:</strong></p>
+<ol>
+<li>Изучить разницу между встроенным и выносным математическим режимом</li>
+<li>Освоить команды для специальных символов и греческих букв</li>
+<li>Научиться выравнивать уравнения с помощью <code>align</code></li>
+<li>Работать с математическими шрифтами и жирными символами</li>
+<li>Создавать нумерованные уравнения и матрицы</li>
+</ol>
+<hr>
+<h1><strong>2. Выполнение лабораторной работы</strong></h1>
+<h2><strong>1. Создание первого документа LaTeX</strong></h2>
+<p>Использование математического режима для простых и сложных формул:</p>
+<pre><code class="language-latex">% Встроенный режим
+Формула в тексте: \( y = mx + c \), также \( 5^2 = 3^2 + 4^2 \)
+
+% Выносный режим
+\[
+\int_{-\infty}^{\infty} e^{-x^2} \, dx
+\]
+</code></pre>
+<hr>
+<h2>2. Индексы и специальные математические команды</h2>
+<p>Использование верхних/нижних индексов и математических функций:</p>
+<pre><code class="language-latex">% Индексы
+\( a^{2} + b_{n} = c^{k}_{i} \)
+
+% Греческие буквы и функции
+\( \sin \theta + \log \alpha = \beta \)
+
+% Дифференциал с пользовательской командой
+\newcommand{\diff}{\mathop{}\!\mathrm{d}}
+\[
+\int_{0}^{1} x^2 \diff x
+\]
+</code></pre>
+<p>Важно: Всегда использовать фигурные скобки {} для группировки индексов.</p>
+<hr>
+<h2>3. Выравнивание уравнений с amsmath</h2>
+<p>Использование окружения align* для многострочных уравнений:</p>
+<pre><code class="language-latex">\begin{align*}
+Q_{n,0} &amp;= 1, \quad Q_{0,k} = [k=0]; \\
+Q_{n,k} &amp;= Q_{n-1,k} + Q_{n-1,k-1} + \binom{n}{k}, \\
+        &amp;\quad \text{для } n,k &gt; 0.
+\end{align*}
+</code></pre>
+<p>Особенности:</p>
+<p>&amp; задает точку выравнивания</p>
+<p>\ разделяет строки</p>
+<p>\quad добавляет горизонтальный пробел</p>
+<p>\text{} позволяет вставлять обычный текст внутри математического режима</p>
+<hr>
+<h2>4. Шрифты и жирные символы в математике</h2>
+<p>Использование различных математических шрифтов:</p>
+<pre><code class="language-latex">% Разные шрифты
+\( \mathrm{Roman}, \mathit{Italic}, \mathbf{Bold}, \mathbb{Blackboard} \)
+
+% Жирные символы с пакетом bm
+\( \bm{\alpha} + \bm{\beta} = \bm{\gamma} \)
+
+% Сравнение правильного и неправильного использования
+\( \text{size} \) (неправильно) vs \( \mathit{size} \) (правильно)
+</code></pre>
+<hr>
+<h1><strong>Вывод</strong></h1>
+<p>Лабораторная работа успешно выполнена. Были получены практические навыки:</p>
+<p>Освоенные технологии:</p>
+<p>Набор сложных математических формул в LaTeX</p>
+<p>Использование пакетов amsmath, bm, mathtools для расширения возможностей</p>
+<p>Выравнивание многострочных уравнений с помощью align</p>
+<p>Работа с математическими шрифтами и форматированием</p>
+<p>Создание профессионально оформленных математических документов</p>
+
+</body>
+</html>
