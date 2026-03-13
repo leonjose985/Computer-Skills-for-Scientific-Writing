@@ -1,34 +1,25 @@
 ---
-# Front matter
 title: "Отчёт по лабораторной работе №1"
 subtitle: "Computer Skills for Scientific Writing"
-author: "Хосе Фернандо Леон Атупанья | НФИмд-01-24"
-
-# Generic options
+author: "Хосе Фернандо Леон Атупанья"
 lang: ru-RU
 toc-title: "Содержание"
-
-# Pdf output format
-toc: true # Table of contents
+bibliography: cite.bib
+csl: pandoc/csl/gost-r-7-0-5-2008-numeric.csl
+toc: true
 toc_depth: 2
-lof: true # List of figures
+lof: true
 fontsize: 12pt
 linestretch: 1.5
 papersize: a4
 documentclass: scrreprt
-
-## I18n
 polyglossia-lang:
   name: russian
   options:
-	- spelling=modern
-	- babelshorthands=true
+  - spelling=modern
+  - babelshorthands=true
 polyglossia-otherlangs:
-  name: spanish
-  options:
-    - variant=mexican
-
-### Fonts
+  name: english
 mainfont: PT Serif
 romanfont: PT Serif
 sansfont: PT Sans
@@ -37,8 +28,15 @@ mainfontoptions: Ligatures=TeX
 romanfontoptions: Ligatures=TeX
 sansfontoptions: Ligatures=TeX,Scale=MatchLowercase
 monofontoptions: Scale=MatchLowercase,Scale=0.9
-
-## Misc options
+biblatex: true
+biblio-style: "gost-numeric"
+biblatexoptions:
+  - parentracker=true
+  - backend=biber
+  - hyperref=auto
+  - language=auto
+  - autolang=other*
+  - citestyle=gost-numeric
 indent: true
 header-includes:
   - \linepenalty=10
@@ -67,11 +65,63 @@ header-includes:
 
 # Выполнение лабораторной работы
 
-### 1. Установка дистрибутива TeX Live
+## Установка дистрибутива TeX Live
 
-В рамках лабораторной работы была выполнена установка дистрибутива TeX Live, который является наиболее полным и универсальным набором инструментов для работы с LaTeX. 
+В рамках лабораторной работы была выполнена установка дистрибутива TeX Live, который является наиболее полным и универсальным набором инструментов для работы с LaTeX и поддерживается сообществом разработчиков.
 
-Установка производилась в операционной системе Ubuntu с использованием пакетного менеджера `apt`. Для этого была выполнена следующая команда в терминале:
-
+Установка производилась с использованием пакетного менеджера операционной системы. Для системы Ubuntu был использован следующий командный интерфейс:
 ```bash
 sudo apt install texlive-full
+```
+
+После завершения установки была выполнена проверка корректности работы компилятора LaTeX с помощью команды:
+```bash
+pdflatex --version
+```
+
+Результат выполнения команды подтвердил успешную установку TeX Live и готовность системы к работе с LaTeX-документами
+(см. рис. [-@fig:001]).
+
+![Результат команды pdflatex --version](image/1.png){#fig:001}
+
+## Создание первого LaTeX-документа
+
+Был создан файл формата `.tex`, содержащий базовую структуру документа LaTeX. В документе были использованы основные элементы: объявление класса документа (`article`), подключение пакетов для поддержки языка и математических формул, задание заголовка, автора и даты, а также формирование основного содержимого документа.
+
+Пример структуры документа:
+```latex
+\documentclass{article}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+
+\title{Laboratorio 1}
+\author{Jose Fernando Leon Atupanya}
+\date{\today}
+
+\begin{document}
+\maketitle
+\section{Introducción}
+Texto del documento.
+\end{document}
+```
+
+После компиляции файла был получен PDF-документ с корректно отображаемым текстом и структурой
+(см. рис. [-@fig:002]).
+
+![Скомпилированный PDF-документ](image/2.png){#fig:002}
+
+## Использование математических формул
+
+В ходе лабораторной работы были изучены основные способы ввода математических выражений в LaTeX: встроенные формулы в тексте, отдельные формулы в режиме отображения, а также нумерованные уравнения.
+
+# Выводы
+
+В ходе выполнения лабораторной работы были освоены основные принципы работы с системой LaTeX и дистрибутивом TeX Live. Были получены следующие навыки и знания: установка и настройка среды LaTeX (TeX Live), создание и компиляция LaTeX-документов, работа с базовой структурой документа (`\documentclass`, `\begin{document}`, `\section`), использование математических формул и специальных символов, а также оформление отчётов в профессиональном и стандартизированном виде.
+
+LaTeX является мощным инструментом для подготовки научных и технических документов, обеспечивающим высокое качество типографики и удобство работы с математическими формулами и структурированным текстом. Несмотря на необходимость изучения синтаксиса команд, LaTeX предоставляет широкие возможности для автоматизации оформления документов, что особенно важно в научной и инженерной деятельности.
+
+# Список литературы{.unnumbered}
+
+1. [TeX Live](https://www.tug.org/texlive/)
+2. [LaTeX Project](https://www.latex-project.org/get/)
+3. [Ubuntu packages — texlive-full](https://packages.ubuntu.com/texlive-full)
