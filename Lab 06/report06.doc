@@ -1,0 +1,136 @@
+﻿
+      <html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word' xmlns='http://www.w3.org/TR/REC-html40'>
+      <head>
+        <meta charset='utf-8'>
+        <title>Converted from Markdown</title>
+        <!--[if gte mso 9]>
+        <xml>
+          <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotPromptForConvert/>
+            <w:DoNotShowInsertAsIcon/>
+          </w:WordDocument>
+        </xml>
+        <![endif]-->
+        <style>
+          @page {
+            size: A4;
+            margin: 2.54cm;
+          }
+          body { 
+            font-family: 'Times New Roman', serif; 
+            font-size: 12pt;
+            line-height: 1.5; 
+            margin: 0;
+            padding: 0;
+            color: #000;
+          }
+          h1 { font-size: 18pt; font-weight: bold; margin: 12pt 0 6pt 0; }
+          h2 { font-size: 16pt; font-weight: bold; margin: 12pt 0 6pt 0; }
+          h3 { font-size: 14pt; font-weight: bold; margin: 12pt 0 6pt 0; }
+          p { margin: 6pt 0; }
+          code { 
+            font-family: 'Courier New', monospace;
+            background-color: #f5f5f5;
+            padding: 2pt;
+            border: 1pt solid #ddd;
+          }
+          pre { 
+            font-family: 'Courier New', monospace;
+            background-color: #f5f5f5;
+            padding: 6pt;
+            border: 1pt solid #ddd;
+            margin: 6pt 0;
+            white-space: pre-wrap;
+          }
+          blockquote { 
+            border-left: 3pt solid #ccc;
+            margin: 6pt 0;
+            padding-left: 12pt;
+            font-style: italic;
+          }
+          table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 6pt 0;
+          }
+          th, td {
+            border: 1pt solid #000;
+            padding: 3pt 6pt;
+            text-align: left;
+          }
+          th {
+            background-color: #f0f0f0;
+            font-weight: bold;
+          }
+          ul, ol {
+            margin: 6pt 0;
+            padding-left: 24pt;
+          }
+          li {
+            margin: 3pt 0;
+          }
+        </style>
+      </head>
+      <body>
+        <h1>Лабораторнаяработа No 6</h1>
+<p><strong>Computer Skills for Scientific Writing</strong></p>
+<h2>Хосе Фернандо Леон Атупанья | НФИмд-01-24</h2>
+<h2>Содержание</h2>
+<ul>
+<li>1 Цель работы</li>
+<li>2 Выполнение лабораторной работы</li>
+<li>3 Выводы</li>
+</ul>
+<h2>1 Цель работы</h2>
+<p>Освоить работу с библиографией в LaTeX, изучить создание и использование BibTeX-файлов, научиться применять различные стили цитирования с помощью пакетов natbib и biblatex, а также понять различия между двумя подходами к управлению библиографией.</p>
+<h2>2 Выполнение лабораторной работы</h2>
+<ol>
+<li>Испытание примеров с natbib и biblatex</li>
+</ol>
+<p>Задание: Протестировать оба примера (natbib и biblatex) с соответствующими процессами компиляции.
+Для natbib требуется последовательность: LaTeX → BibTeX → LaTeX → LaTeX
+Для biblatex требуется: LaTeX → Biber → LaTeX</p>
+<p>Код для natbib с авторско-годовым стилем цитирования.
+<img src="img%5C1.1.PNG" alt="Рис. 2.1">
+Результат - библиография в стиле plainnat с текстовыми и скобочными цитатами
+<img src="img%5C1.2.PNG" alt="Рис. 2.1"></p>
+<ol start="2">
+<li>Создание новых записей в базе данных и новых цитат.</li>
+</ol>
+<p>Задание: Создать новые записи в BibTeX-файле и добавить соответствующие цитаты в документ.
+Выполнение:
+Добавлены две новые записи в файл learnlatex.bib: статья Эйнштейна 1905 года и книга Кнута 1984 года.</p>
+<p><img src="img/2.1.PNG" alt="Рис. 2.1">
+Новые записи в BibTeX-файле для статей Эйнштейна и Кнута
+<img src="img/2.2.PNG" alt="Рис. 2.2">
+Использование новых цитат в документе LaTeX</p>
+<ol start="3">
+<li>Добавление цитаты, отсутствующей в базе данных</li>
+</ol>
+<p>Задание: Добавить цитату на несуществующую в базе данных запись и наблюдать результат.
+Выполнение:
+При цитировании несуществующего источника система генерирует предупреждения, но компиляция завершается успешно.</p>
+<p><img src="img/3.1.PNG" alt="Рис. 3.1">
+Код с цитированием несуществующей записи Nonexistent2023
+<img src="img/3.2.PNG" alt="Рис. 3.2">
+Предупреждения в логе компиляции об отсутствующих ссылках</p>
+<ol start="4">
+<li>Эксперименты с числовыми опциями в natbib и biblatex</li>
+</ol>
+<p>Задание: Протестировать числовой стиль цитирования в обоих подходах.
+Выполнение:
+Для natbib используется опция numbers при загрузке пакета, для biblatex - style=numeric.</p>
+<p><img src="img/4.1.PNG" alt="Рис. 4.1: Переменные программы">
+Код natbib с числовыми цитатами через опцию [numbers]
+<img src="img/4.2.PNG" alt="Рис. 4.1: Переменные программы">
+Результат - числовые цитаты в квадратных скобках</p>
+<h2>3 Выводы</h2>
+<p>В ходе данной лабораторной работы были успешно освоены ключевые аспекты работы с библиографией в LaTeX. Мы изучили два основных подхода к управлению цитированием: традиционный BibTeX с пакетом natbib и современный biblatex с Biber.
+Были приобретены практические навыки создания и редактирования BibTeX-файлов, использования различных стилей цитирования (автор-год и числовой), а также понимания процессов компиляции для каждого метода. Особое внимание было уделено различиям в синтаксисе команд между двумя подходами и особенностям обработки ошибок при ссылках на отсутствующие источники.
+Полученные знания позволяют эффективно управлять библиографическими ссылками в научных работах, выбирая оптимальный подход в зависимости от требований издания или личных предпочтений.</p>
+
+      </body>
+      </html>
+    
