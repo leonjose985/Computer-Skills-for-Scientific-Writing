@@ -1,0 +1,141 @@
+﻿
+      <html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word' xmlns='http://www.w3.org/TR/REC-html40'>
+      <head>
+        <meta charset='utf-8'>
+        <title>Converted from Markdown</title>
+        <!--[if gte mso 9]>
+        <xml>
+          <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotPromptForConvert/>
+            <w:DoNotShowInsertAsIcon/>
+          </w:WordDocument>
+        </xml>
+        <![endif]-->
+        <style>
+          @page {
+            size: A4;
+            margin: 2.54cm;
+          }
+          body { 
+            font-family: 'Times New Roman', serif; 
+            font-size: 12pt;
+            line-height: 1.5; 
+            margin: 0;
+            padding: 0;
+            color: #000;
+          }
+          h1 { font-size: 18pt; font-weight: bold; margin: 12pt 0 6pt 0; }
+          h2 { font-size: 16pt; font-weight: bold; margin: 12pt 0 6pt 0; }
+          h3 { font-size: 14pt; font-weight: bold; margin: 12pt 0 6pt 0; }
+          p { margin: 6pt 0; }
+          code { 
+            font-family: 'Courier New', monospace;
+            background-color: #f5f5f5;
+            padding: 2pt;
+            border: 1pt solid #ddd;
+          }
+          pre { 
+            font-family: 'Courier New', monospace;
+            background-color: #f5f5f5;
+            padding: 6pt;
+            border: 1pt solid #ddd;
+            margin: 6pt 0;
+            white-space: pre-wrap;
+          }
+          blockquote { 
+            border-left: 3pt solid #ccc;
+            margin: 6pt 0;
+            padding-left: 12pt;
+            font-style: italic;
+          }
+          table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 6pt 0;
+          }
+          th, td {
+            border: 1pt solid #000;
+            padding: 3pt 6pt;
+            text-align: left;
+          }
+          th {
+            background-color: #f0f0f0;
+            font-weight: bold;
+          }
+          ul, ol {
+            margin: 6pt 0;
+            padding-left: 24pt;
+          }
+          li {
+            margin: 3pt 0;
+          }
+        </style>
+      </head>
+      <body>
+        <h1>Лабораторнаяработа No 1</h1>
+<p><strong>Computer Skills for Scientific Writing</strong></p>
+<h2>Хосе Фернандо Леон Атупанья | НФИмд-01-24</h2>
+<h2>Содержание</h2>
+<ul>
+<li>1 Цель работы</li>
+<li>2 Выполнение лабораторной работы</li>
+<li>3 Выводы</li>
+</ul>
+<h2>1 Цель работы</h2>
+<p>Целью данной лабораторной работы является освоение базовых принципов работы с системой вёрстки LaTeX. В ходе выполнения работы необходимо изучить процесс установки дистрибутива TeX Live, познакомиться с основными командами LaTeX, структурой документа и правилами компиляции файлов формата .tex в PDF-документ.</p>
+<p>Дополнительной задачей является формирование навыков оформления отчётов и научных документов с использованием LaTeX, а также приобретение практического опыта работы с текстовыми редакторами и командной строкой.</p>
+<h2>2 Выполнение лабораторной работы</h2>
+<ol>
+<li>Установка дистрибутива TeX Live</li>
+</ol>
+<p>В рамках лабораторной работы была выполнена установка дистрибутива TeX Live, который является наиболее полным и универсальным набором инструментов для работы с LaTeX и поддерживается сообществом разработчиков.</p>
+<p>Установка производилась с использованием пакетного менеджера операционной системы. Для системы Ubuntu был использован следующий командный интерфейс:</p>
+<p>Код:</p>
+<p>sudo apt install texlive-full</p>
+<p>После завершения установки была выполнена проверка корректности работы компилятора LaTeX с помощью команды:</p>
+<p>pdflatex --version</p>
+<p>Результат выполнения команды подтвердил успешную установку TeX Live и готовность системы к работе с LaTeX-документами.</p>
+<ol start="2">
+<li>Создание первого LaTeX-документа</li>
+</ol>
+<p>Был создан файл формата .tex, содержащий базовую структуру документа LaTeX. В документе были использованы основные элементы:</p>
+<p>объявление класса документа (article);</p>
+<p>подключение пакетов для поддержки языка и математических формул;</p>
+<p>задание заголовка, автора и даты;</p>
+<p>формирование основного содержимого документа.</p>
+<p>Пример структуры документа:</p>
+<p>´´´
+\documentclass{article}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}</p>
+<p>\title{Laboratorio 1}
+\author{Jose Fernando Leon Atupanya}
+\date{\today}</p>
+<p>\begin{document}
+\maketitle
+\section{Introducción}
+Texto del documento.
+\end{document}</p>
+<p>´´´</p>
+<p>После компиляции файла был получен PDF-документ с корректно отображаемым текстом и структурой.</p>
+<ol start="3">
+<li>Использование математических формул</li>
+</ol>
+<p>В ходе лабораторной работы были изучены основные способы ввода математических выражений в LaTeX:</p>
+<p>встроенные формулы в тексте;</p>
+<p>отдельные формулы в режиме отображения;</p>
+<p>нумерованные уравнения.</p>
+<h2>3 Выводы</h2>
+<p>В ходе выполнения лабораторной работы были освоены основные принципы работы с системой LaTeX и дистрибутивом TeX Live. Были получены следующие навыки и знания:</p>
+<p>установка и настройка среды LaTeX (TeX Live);</p>
+<p>создание и компиляция LaTeX-документов;</p>
+<p>работа с базовой структурой документа (\documentclass, \begin{document}, \section);</p>
+<p>использование математических формул и специальных символов;</p>
+<p>оформление отчётов в профессиональном и стандартизированном виде.</p>
+<p>LaTeX является мощным инструментом для подготовки научных и технических документов, обеспечивающим высокое качество типографики и удобство работы с математическими формулами и структурированным текстом. Несмотря на необходимость изучения синтаксиса команд, LaTeX предоставляет широкие возможности для автоматизации оформления документов и повышения их читаемости и воспроизводимости, что особенно важно в научной и инженерной деятельности.</p>
+
+      </body>
+      </html>
+    
